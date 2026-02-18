@@ -1,0 +1,89 @@
+﻿@model IEnumerable<MyPortfolio.Models.Project>
+
+<main class="d-flex flex-column gap-5">
+    <div class=container id="welcome-section">
+            <div class="text-center">
+                <h1 class="back-text">Welcome</h1>
+                <h1 class="front-text">Welcome</h1>
+                <h1 class="back-text">Welcome</h1>
+            </div>
+    </div>
+
+    <div class="container" id=about-section>
+        <div class="row">
+            <div class="personal-image-section col-md-6" id="personal-img">
+                <img src="~/images/personal-img.png" alt="Profile Image" class="img-fluid shadow">
+            </div>
+            <div class="personal-section col-md-6" id="personal-info">
+                <h1>Assalamualaikum</h1>
+                <p>Hi ! I'm Mohamad Haikal Rejab, a passionate software developer with a love for creating innovative solutions. With experience in various programming languages and frameworks, I enjoy tackling complex problems and building applications that make a difference.</p>
+            <div class="text-center py-4">
+                <a href="#skill-section" class="btn btn-nav">Skill</a>
+                <a href="#" class="btn btn-nav">Project</a>
+                <a href="#" class="btn btn-nav">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="skill-section">
+        <h1 class="text-center py-4">Skill</h1>
+        <div class="row">
+            <h2 class="text-center py-4">Programming Languages</h2>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm" id="skill-card">
+                    <img src="~/images/c++.png" class="card-image-skill" alt="C++">
+                    <div class="card-body">
+                        <h5 class="card-name text-center">C++</h5>
+                        @* <p class="card-text">Experienced in C++ for building robust applications and APIs.</p> *@
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm" id="skill-card">
+                    <img src="~/images/HTML.png" class="card-image-skill" alt="HTML">
+                    <div class="card-body">
+                        <h5 class="card-name text-center">HTML</h5>
+                        @* <p class="card-text">Experienced in C++ for building robust applications and APIs.</p> *@
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm" id="skill-card">
+                    <img src="~/images/JavaScript.png" class="card-image-skill" alt="JavaScript">
+                    <div class="card-body">
+                        <h5 class="card-name text-center">JavaScript</h5>
+                        @* <p class="card-text">Experienced in C++ for building robust applications and APIs.</p> *@
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm" id="skill-card">
+                    <img src="~/images/JavaScript.png" class="card-image-skill" alt="JavaScript">
+                    <div class="card-body">
+                        <h5 class="card-name text-center">JavaScript</h5>
+                        @* <p class="card-text">Experienced in C++ for building robust applications and APIs.</p> *@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@*  
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name">
+                    <div class="card-body">
+                        <h5 class="card-name">@item.Name</h5>
+                        <p class="card-text">@item.Description</p>
+                        <span class="badge bg-primary">@item.ProjectUrl</span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div> *@
