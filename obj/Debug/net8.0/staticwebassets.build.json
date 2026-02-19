@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YiQhNwL6bbuaKd55jkjWWuCIHXiLND/CIHR5MYAHezA=",
+  "Hash": "w3rgPALaPfui5mtCk0XPn2uU5ELHMVLKarrosG9T/zY=",
   "Source": "MyPortfolio",
   "BasePath": "_content/MyPortfolio",
   "Mode": "Default",
@@ -131,12 +131,12 @@
       "OriginalItemSpec": "wwwroot\\images\\c++.png"
     },
     {
-      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\HTML.jpg",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\csharp.png",
       "SourceId": "MyPortfolio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\",
       "BasePath": "_content/MyPortfolio",
-      "RelativePath": "images/HTML.jpg",
+      "RelativePath": "images/csharp.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,7 +147,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\HTML.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\csharp.png"
     },
     {
       "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\HTML.png",
@@ -169,12 +169,12 @@
       "OriginalItemSpec": "wwwroot\\images\\HTML.png"
     },
     {
-      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\JavaScript.jpg",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\Java.png",
       "SourceId": "MyPortfolio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\",
       "BasePath": "_content/MyPortfolio",
-      "RelativePath": "images/JavaScript.jpg",
+      "RelativePath": "images/Java.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,7 +185,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\JavaScript.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\Java.png"
     },
     {
       "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\JavaScript.png",
@@ -207,6 +207,25 @@
       "OriginalItemSpec": "wwwroot\\images\\JavaScript.png"
     },
     {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\Kotlin.svg",
+      "SourceId": "MyPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\",
+      "BasePath": "_content/MyPortfolio",
+      "RelativePath": "images/Kotlin.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Kotlin.svg"
+    },
+    {
       "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\personal-img.png",
       "SourceId": "MyPortfolio",
       "SourceType": "Discovered",
@@ -224,6 +243,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\personal-img.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\PHP.png",
+      "SourceId": "MyPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\",
+      "BasePath": "_content/MyPortfolio",
+      "RelativePath": "images/PHP.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\PHP.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\star.png",
+      "SourceId": "MyPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\",
+      "BasePath": "_content/MyPortfolio",
+      "RelativePath": "images/star.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\star.png"
     },
     {
       "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\js\\site.js",

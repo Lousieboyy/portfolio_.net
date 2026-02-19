@@ -28,3 +28,4 @@ C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\obj\Debug\net8.0\refin
 C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\obj\Debug\net8.0\MyPortfolio.pdb
 C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\obj\Debug\net8.0\MyPortfolio.genruntimeconfig.cache
 C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\obj\Debug\net8.0\ref\MyPortfolio.dll
+C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\obj\Debug\net8.0\MyPortfolio.sourcelink.json

@@ -110,17 +110,29 @@ main .container + .container {
   border: 2px solid black;
 }
 
-#skill-card{
+#skill-card,
+#tool-card{
   padding: 10px 0;
   border: none;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-image-skill{
+.card-image-skill,
+.card-image-tool{
   width: 100px;
   height: 100px;
   margin: 0 auto;
   justify-content: center;
 }
 
+.star{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.star-image{
+  width: 30px;
+  height: auto;
+}

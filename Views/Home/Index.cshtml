@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MyPortfolio.Models.Project>
+﻿@model MyPortfolio.Models.HomeViewModel
 
 <main class="d-flex flex-column gap-5">
     <div class=container id="welcome-section">
@@ -26,45 +26,48 @@
     </div>
 
     <div class="container" id="skill-section">
-        <h1 class="text-center py-4">Skill</h1>
+        <h1 class="text-center py-4">Skills</h1>
+            <div class="row">
+                @foreach (Skill item in Model.Skills)
+                {
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 shadow-sm" id="skill-card">
+                            <img src="@item.ImageUrl" class="card-image-skill" alt="@item.Name">
+                            <div class="card-body">
+                                <h5 class="card-name text-center">@item.Name</h5>
+                                <div class="star">
+                                    @for(int i = 0; i < 5; i++)
+                                    {
+                                        if(i < int.Parse(item.StarRating))
+                                        {
+                                            <img src="~/images/star.png" alt="Star" class="star-image">
+                                        }
+                                        else
+                                        {
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+    </div>
+
+    <div class="container" id="tool-section">
+        <h1 class="text-center py-4">Tools & Frameworks</h1>
         <div class="row">
-            <h2 class="text-center py-4">Programming Languages</h2>
-            <div class="col-md-3 mb-4">
-                <div class="card h-100 shadow-sm" id="skill-card">
-                    <img src="~/images/c++.png" class="card-image-skill" alt="C++">
-                    <div class="card-body">
-                        <h5 class="card-name text-center">C++</h5>
-                        @* <p class="card-text">Experienced in C++ for building robust applications and APIs.</p> *@
+            @foreach(Tool item in Model.Tools)
+            {
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 shadow-sm" id="tool-card">
+                        <img src="@item.ImageUrl" class="card-image-tool" alt="@item.Name">
+                        <div class="card-body">
+                            <h5 class="card-name text-center">@item.Name</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card h-100 shadow-sm" id="skill-card">
-                    <img src="~/images/HTML.png" class="card-image-skill" alt="HTML">
-                    <div class="card-body">
-                        <h5 class="card-name text-center">HTML</h5>
-                        @* <p class="card-text">Experienced in C++ for building robust applications and APIs.</p> *@
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card h-100 shadow-sm" id="skill-card">
-                    <img src="~/images/JavaScript.png" class="card-image-skill" alt="JavaScript">
-                    <div class="card-body">
-                        <h5 class="card-name text-center">JavaScript</h5>
-                        @* <p class="card-text">Experienced in C++ for building robust applications and APIs.</p> *@
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card h-100 shadow-sm" id="skill-card">
-                    <img src="~/images/JavaScript.png" class="card-image-skill" alt="JavaScript">
-                    <div class="card-body">
-                        <h5 class="card-name text-center">JavaScript</h5>
-                        @* <p class="card-text">Experienced in C++ for building robust applications and APIs.</p> *@
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </main>

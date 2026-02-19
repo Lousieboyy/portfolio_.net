@@ -17,28 +17,40 @@
       "PackagePath": "staticwebassets\\fonts\\aether-sans.otf"
     },
     {
-      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\HTML.jpg",
-      "PackagePath": "staticwebassets\\images\\HTML.jpg"
-    },
-    {
       "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\HTML.png",
       "PackagePath": "staticwebassets\\images\\HTML.png"
     },
     {
-      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\JavaScript.jpg",
-      "PackagePath": "staticwebassets\\images\\JavaScript.jpg"
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\Java.png",
+      "PackagePath": "staticwebassets\\images\\Java.png"
     },
     {
       "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\JavaScript.png",
       "PackagePath": "staticwebassets\\images\\JavaScript.png"
     },
     {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\Kotlin.svg",
+      "PackagePath": "staticwebassets\\images\\Kotlin.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\PHP.png",
+      "PackagePath": "staticwebassets\\images\\PHP.png"
+    },
+    {
       "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\c++.png",
       "PackagePath": "staticwebassets\\images\\c++.png"
     },
     {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\csharp.png",
+      "PackagePath": "staticwebassets\\images\\csharp.png"
+    },
+    {
       "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\personal-img.png",
       "PackagePath": "staticwebassets\\images\\personal-img.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\star.png",
+      "PackagePath": "staticwebassets\\images\\star.png"
     },
     {
       "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\js\\site.js",
