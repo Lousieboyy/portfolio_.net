@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\images\\PHP.png"
     },
     {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\androidstudio.svg",
+      "PackagePath": "staticwebassets\\images\\androidstudio.svg"
+    },
+    {
       "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\c++.png",
       "PackagePath": "staticwebassets\\images\\c++.png"
     },
@@ -45,12 +49,28 @@
       "PackagePath": "staticwebassets\\images\\csharp.png"
     },
     {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\figma.svg",
+      "PackagePath": "staticwebassets\\images\\figma.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\github.png",
+      "PackagePath": "staticwebassets\\images\\github.png"
+    },
+    {
       "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\personal-img.png",
       "PackagePath": "staticwebassets\\images\\personal-img.png"
     },
     {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\postman.png",
+      "PackagePath": "staticwebassets\\images\\postman.png"
+    },
+    {
       "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\star.png",
       "PackagePath": "staticwebassets\\images\\star.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\visualstudio.png",
+      "PackagePath": "staticwebassets\\images\\visualstudio.png"
     },
     {
       "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\js\\site.js",

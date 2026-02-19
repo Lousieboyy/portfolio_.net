@@ -104,6 +104,38 @@ public class HomeController : Controller
             Name = "Android Studio",
             ImageUrl = "/images/androidstudio.svg"
         });
+        myProjects.Add(new Project
+        {
+            Id = 1,
+            Name = "Final Project DITM 2113 MULTIMEDIA SYSTEM",
+            Description = "",
+            ImageUrl = "",  
+            ProjectUrl = "https://www.youtube.com/watch?v=HEqx5QQTABs"
+        });
+        myProjects.Add(new Project
+        {
+            Id = 2,
+            Name = "Campus Tutor - Peer to Peer Tutoring System",
+            Description = "Mobile application that connects students for peer-to-peer tutoring, allowing them to share knowledge and support each other's learning journeys.",
+            ImageUrl = "",
+            ProjectUrl = ""
+        });
+        myProjects.Add(new Project
+        {
+            Id = 3,
+            Name = "Saving Goal Gamification App",
+            Description = "An app that gamifies saving goals, encouraging users to achieve financial targets through interactive challenges and rewards.",
+            ImageUrl = "",
+            ProjectUrl = "https://www.youtube.com/shorts/6mKU7RNpdh8"
+        });
+        myProjects.Add(new Project
+        {
+            Id =4,
+            Name = "smart-city-citizen-app",
+            Description = "An application that provides real-time information and services to citizens in a smart city, enhancing their daily lives and promoting community engagement.",
+            ImageUrl = "",
+            ProjectUrl = ""
+        });
     
         return View(model);
     }

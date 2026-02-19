@@ -110,8 +110,15 @@ main .container + .container {
   border: 2px solid black;
 }
 
+.card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #skill-card,
-#tool-card{
+#tool-card,
+#project-card{
   padding: 10px 0;
   border: none;
   border-radius: 15px;
@@ -119,7 +126,8 @@ main .container + .container {
 }
 
 .card-image-skill,
-.card-image-tool{
+.card-image-tool,
+.card-image-project{
   width: 100px;
   height: 100px;
   margin: 0 auto;
