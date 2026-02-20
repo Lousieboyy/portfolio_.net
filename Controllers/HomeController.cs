@@ -74,6 +74,13 @@ public class HomeController : Controller
             ImageUrl = "/images/kotlin.svg",
             StarRating = 3.ToString()
         });
+        mySkills.Add(new Skill
+        {
+            Id = 8,
+            Name = "Python",
+            ImageUrl = "/images/python.png",
+            StarRating = 3.ToString()
+        });
         myTools.Add(new Tool
         {
             Id = 1,

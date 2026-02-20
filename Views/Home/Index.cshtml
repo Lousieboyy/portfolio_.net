@@ -32,7 +32,7 @@
                 @foreach (Skill item in Model.Skills)
                 {
                     <div class="col-md-3 mb-4">
-                        <div class="card h-100 shadow-sm" id="skill-card">
+                        <div class="card h-100 shadow" id="skill-card">
                             <img src="@item.ImageUrl" class="card-image-skill" alt="@item.Name">
                             <div class="card-body">
                                 <h5 class="card-name text-center">@item.Name</h5>
@@ -59,7 +59,7 @@
             @foreach(Tool item in Model.Tools)
             {
                 <div class="col-md-3 mb-4">
-                    <div class="card h-100 shadow-sm" id="tool-card">
+                    <div class="card h-100 shadow" id="tool-card">
                         <img src="@item.ImageUrl" class="card-image-tool" alt="@item.Name">
                         <div class="card-body">
                             <h5 class="card-name text-center">@item.Name</h5>
@@ -75,7 +75,7 @@
         <div class="row">
             @foreach(Project item in Model.Projects){
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm" id="project-card">
+                    <div class="card h-100 shadow" id="project-card">
                         <img src="@item.ImageUrl" class="card-image-project" alt="@item.Name">
                         <div class="card-body">
                             <h5 class="card-title text-center">@item.Name</h5>

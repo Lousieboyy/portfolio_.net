@@ -122,7 +122,33 @@ main .container + .container {
   padding: 10px 0;
   border: none;
   border-radius: 15px;
+  position: relative;
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+@keyframes travel-across-border{
+  0%,100%{
+    clip-path: inset(0 0  95% 0);
+  }
+  25%{
+    clip-path: inset(0 95% 0 0);
+  }
+  50%{
+    clip-path: inset(95% 0 0 0);
+  }
+  75%{  
+    clip-path: inset(0 0 0 95%);
+  }
+}
+
+
+#skill-card:hover,
+#tool-card:hover{
+  transform: scale(1,1.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 99;
 }
 
 .card-image-skill,

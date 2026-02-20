@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jgGhisnUrqjcfYKUN268+5fy66Q1IxBtZRp4KUluzbg=",
+  "Hash": "0gyK5SIQj7XinDU+/qOR1s5SpTsojAI28lrX3vs0QZ4=",
   "Source": "MyPortfolio",
   "BasePath": "_content/MyPortfolio",
   "Mode": "Default",
@@ -338,6 +338,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\postman.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\python.png",
+      "SourceId": "MyPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\",
+      "BasePath": "_content/MyPortfolio",
+      "RelativePath": "images/python.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\python.png"
     },
     {
       "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\star.png",
