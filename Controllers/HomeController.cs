@@ -13,6 +13,82 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    public IActionResult Certificate()
+    {
+        var myCertificate = new List<Certificate>();
+    
+        myCertificate.Add(new Certificate
+        {
+            Id = 1,
+            Name = "Implementing Cloud Load Balancing for Compute Engine",
+            ImageUrl = "/images/cert1.png",
+            Link = "https://www.skills.google/public_profiles/fadc3a9b-b62a-4d6a-8547-b24dc966646c/badges/12794002",
+            Date = new DateTime(2024, 11, 12)
+        });
+        myCertificate.Add(new Certificate
+        {
+            Id = 2,
+            Name = "Build a Secure Google Cloud Network",
+            ImageUrl = "/images/cert2.png",
+            Link = "https://www.skills.google/public_profiles/fadc3a9b-b62a-4d6a-8547-b24dc966646c/badges/12793158",
+            Date = new DateTime(2024, 11, 12)
+        });
+        myCertificate.Add(new Certificate
+        {
+            Id = 3,
+            Name = "Prepare Data for ML APIs on Google Cloud",
+            ImageUrl = "/images/cert3.png",
+            Link = "https://www.skills.google/public_profiles/fadc3a9b-b62a-4d6a-8547-b24dc966646c/badges/12790204",
+            Date = new DateTime(2024, 11, 12)
+        });
+        myCertificate.Add(new Certificate
+        {
+            Id = 4,
+            Name = "Set Up an App Dev Environment on Google Cloud",
+            ImageUrl = "/images/cert4.png",
+            Link = "https://www.skills.google/public_profiles/fadc3a9b-b62a-4d6a-8547-b24dc966646c/badges/12771239",
+            Date = new DateTime(2024, 11, 11)
+        });
+        myCertificate.Add(new Certificate
+        {
+            Id = 5,
+            Name = "Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud",
+            ImageUrl = "/images/cert5.png",
+            Link = "https://www.skills.google/public_profiles/fadc3a9b-b62a-4d6a-8547-b24dc966646c/badges/12757318",
+            Date = new DateTime(2024, 11, 10)
+        }); 
+        myCertificate.Add(new Certificate
+        {
+            Id = 6,
+            Name = "Google Cloud Computing Foundations: Networking & Security in Google Cloud",
+            ImageUrl = "/images/cert6.png",
+            Link = "https://www.skills.google/public_profiles/fadc3a9b-b62a-4d6a-8547-b24dc966646c/badges/12734081",
+            Date = new DateTime(2024, 11, 9)
+        });
+        myCertificate.Add(new Certificate
+        {
+            Id = 7,
+            Name = "Google Cloud Computing Foundations: Infrastructure in Google Cloud",
+            ImageUrl = "/images/cert7.png",
+            Link = "https://www.skills.google/public_profiles/fadc3a9b-b62a-4d6a-8547-b24dc966646c/badges/12720384",
+            Date = new DateTime(2024, 11, 9)
+        });
+        myCertificate.Add(new Certificate
+        {
+            Id = 8,
+            Name = "Google Cloud Computing Foundations: Cloud Computing Fundamentals",
+            ImageUrl = "/images/cert8.png",
+            Link = "https://www.skills.google/public_profiles/fadc3a9b-b62a-4d6a-8547-b24dc966646c/badges/12660927",
+            Date = new DateTime(2024, 11, 6)
+        }); 
+        var sortedCertificates = myCertificate.OrderByDescending(c => c.Date).ToList();
+        var model = new CertificateViewModel
+        {
+            Certificate = sortedCertificates
+        };
+        return View(model);
+    }
+
     public IActionResult Index()
     {
         var myProjects = new List<Project>();
@@ -124,8 +200,8 @@ public class HomeController : Controller
             Id = 2,
             Name = "Campus Tutor - Peer to Peer Tutoring System",
             Description = "Mobile application that connects students for peer-to-peer tutoring, allowing them to share knowledge and support each other's learning journeys.",
-            ImageUrl = "",
-            ProjectUrl = ""
+            ImageUrl = "/images/campustutor.png",
+            ProjectUrl = "https://github.com/NAD3012/CampusTutor.git"
         });
         myProjects.Add(new Project
         {

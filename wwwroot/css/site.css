@@ -118,7 +118,8 @@ main .container + .container {
 
 #skill-card,
 #tool-card,
-#project-card{
+#project-card,
+#certificate-card{
   padding: 10px 0;
   border: none;
   border-radius: 15px;
@@ -144,12 +145,12 @@ main .container + .container {
 }
 
 
-#skill-card:hover,
+/* #skill-card:hover,
 #tool-card:hover{
   transform: scale(1,1.2);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   z-index: 99;
-}
+} */
 
 .card-image-skill,
 .card-image-tool,

@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Certificates";
+}
+<main>
+    <div class="text-center">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            @foreach(Certificate item in Model.Certificate){
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 shadow" id="certificate-card">
+                        <img src="@item.ImageUrl" class="card-image-certificate" alt="@item.Name">
+                        <div class="card-body">
+                            <h5 class="card-name text-center">@item.Name</h5>
+                            <p class="card-description text-center">Received on: @item.Date.ToShortDateString()</p>
+                            <a href="@item.Link" class="btn btn-nav">View</a>
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+    </div>
+</main>
