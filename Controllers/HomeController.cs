@@ -13,6 +13,28 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    public static string embeddedUrl(String url)
+    {
+        if (url.Contains("youtu.be/"))
+        {
+            var videoId = url.Split("youtu.be/")[1].Split('?')[0];
+            return $"https://www.youtube.com/embed/{videoId}";
+        }
+        if (url.Contains("youtube.com/watch/"))
+        {
+            var uri = new Uri(url);
+            var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
+            var videoId = query["v"];
+            return $"https://www.youtube.com/embed/{videoId}";
+        }
+        if (url.Contains("youtube.com/shorts/"))
+        {
+           var videoId = url.Split("youtube.com/shorts/")[1].Split('?')[0];
+            return $"https://www.youtube.com/embed/{videoId}";
+        }
+        return url;
+    }
+
     public IActionResult Certificate()
     {
         var myCertificate = new List<Certificate>();
@@ -193,7 +215,7 @@ public class HomeController : Controller
             Name = "Final Project DITM 2113 MULTIMEDIA SYSTEM",
             Description = "",
             ImageUrl = "",  
-            ProjectUrl = "https://www.youtube.com/watch?v=HEqx5QQTABs"
+            ProjectUrl = "https://youtu.be/HEqx5QQTABs?si=222anSoUAx4M71JQ"
         });
         myProjects.Add(new Project
         {
@@ -209,7 +231,7 @@ public class HomeController : Controller
             Name = "Saving Goal Gamification App",
             Description = "An app that gamifies saving goals, encouraging users to achieve financial targets through interactive challenges and rewards.",
             ImageUrl = "",
-            ProjectUrl = "https://www.youtube.com/shorts/6mKU7RNpdh8"
+            ProjectUrl = "https://youtube.com/shorts/6mKU7RNpdh8?si=QWWhoi1f84CIJC5h"
         });
         myProjects.Add(new Project
         {
