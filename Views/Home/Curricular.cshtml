@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Curriculars";   
+}
+<main>
+    <div class="text-center">
+        <h1>@ViewData["Title"] & Activities</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            @foreach(Curricular item in Model.Curricular){
+                <div class="col-md-4 mb-40">
+                    <div class="card h-100 shadow" id="curricular-card">
+                        <img src="@item.ImageUrl" class="card-image-curricular text-center" alt="@item.Name">
+                        <div class="card-body">
+                            <h5 class="card-name text-center">@item.Name</h5>
+                            <p class="card-description text-center">Date: @item.Date.ToShortDateString()</p>
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+    </div>
+</main>

@@ -221,7 +221,7 @@ public class HomeController : Controller
         {
             Id = 2,
             Name = "Campus Tutor - Peer to Peer Tutoring System",
-            Description = "Mobile application that connects students for peer-to-peer tutoring, allowing them to share knowledge and support each other's learning journeys.",
+            Description = "",
             ImageUrl = "/images/campustutor.png",
             ProjectUrl = "https://github.com/NAD3012/CampusTutor.git"
         });
@@ -229,7 +229,7 @@ public class HomeController : Controller
         {
             Id = 3,
             Name = "Saving Goal Gamification App",
-            Description = "An app that gamifies saving goals, encouraging users to achieve financial targets through interactive challenges and rewards.",
+            Description = "",
             ImageUrl = "",
             ProjectUrl = "https://youtube.com/shorts/6mKU7RNpdh8?si=QWWhoi1f84CIJC5h"
         });
@@ -237,11 +237,41 @@ public class HomeController : Controller
         {
             Id =4,
             Name = "smart-city-citizen-app",
-            Description = "An application that provides real-time information and services to citizens in a smart city, enhancing their daily lives and promoting community engagement.",
+            Description = "Coming Soon",
             ImageUrl = "",
             ProjectUrl = ""
         });
     
+        return View(model);
+    }
+    public IActionResult Curricular()
+    {
+        var myCurricular = new List<Curricular>();
+        myCurricular.Add(new Curricular
+        {
+            Id = 1,
+            Name = "Service Learning Malaysia (SULAM)",
+            ImageUrl = "/images/studentcouncil.png",
+            Date = new DateTime(2023, 6, 1)
+        });
+        myCurricular.Add(new Curricular
+        {
+            Id = 2,
+            Name = "Ficts Buddies",
+            ImageUrl = "/images/fictsbuddies.png",
+            Date = new DateTime(2023, 6, 1)
+        });
+        myCurricular.Add(new Curricular
+        {
+            Id = 3,
+            Name = "Sukan Antara Fakulti (SAF) Crew",
+            ImageUrl = "/images/safcrew.png",
+            Date = new DateTime(2023, 6, 1)
+        });
+        var model = new CurricularViewModel
+        {
+            Curricular = myCurricular
+        };
         return View(model);
     }
 
