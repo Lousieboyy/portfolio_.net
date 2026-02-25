@@ -13,8 +13,11 @@
                         <img src="@item.ImageUrl" class="card-image-certificate" alt="@item.Name">
                         <div class="card-body">
                             <h5 class="card-name text-center">@item.Name</h5>
-                            <p class="card-description text-center">Received on: @item.Date.ToShortDateString()</p>
-                            <a href="@item.Link" class="btn btn-nav">View</a>
+                            <p class="card-description text-center mb-5">Received on: @item.Date.ToShortDateString()</p>
+                            @if(!string.IsNullOrEmpty(item.Link))
+                            {
+                                <a href="@item.Link" class="btn btn-nav stick bottom mb-4">View</a>
+                            }
                         </div>
                     </div>
                 </div>

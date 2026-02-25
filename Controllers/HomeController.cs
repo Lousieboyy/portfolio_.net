@@ -220,6 +220,14 @@ public class HomeController : Controller
         myProjects.Add(new Project
         {
             Id = 2,
+            Name = "Maternal Pregnancy Tracker",
+            Description = "In Maintenance",
+            ImageUrl = "",  
+            ProjectUrl = ""
+        });
+        myProjects.Add(new Project
+        {
+            Id = 3,
             Name = "Campus Tutor - Peer to Peer Tutoring System",
             Description = "",
             ImageUrl = "/images/campustutor.png",
@@ -227,7 +235,7 @@ public class HomeController : Controller
         });
         myProjects.Add(new Project
         {
-            Id = 3,
+            Id = 4,
             Name = "Saving Goal Gamification App",
             Description = "",
             ImageUrl = "",
@@ -235,13 +243,28 @@ public class HomeController : Controller
         });
         myProjects.Add(new Project
         {
-            Id =4,
-            Name = "smart-city-citizen-app",
+            Id = 5,
+            Name = "Smart-City-Citizen-App",
             Description = "Coming Soon",
             ImageUrl = "",
             ProjectUrl = ""
         });
-    
+        myProjects.Add(new Project
+        {
+            Id = 6,
+            Name = "Mosque-Assist-App",
+            Description = "Coming Soon",
+            ImageUrl = "",
+            ProjectUrl = ""
+        });
+        myProjects.Add(new Project
+        {
+            Id = 7,
+            Name = "Game-Platform",
+            Description = "Coming Soon",
+            ImageUrl = "",
+            ProjectUrl = ""
+        });
         return View(model);
     }
     public IActionResult Curricular()
