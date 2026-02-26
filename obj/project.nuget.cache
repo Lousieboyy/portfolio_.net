@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ze3SP8wiHYc=",
+  "dgSpecHash": "REqWkRmvExc=",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\MyPortfolio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\htmlagilitypack\\1.12.4\\htmlagilitypack.1.12.4.nupkg.sha512"
+  ],
   "logs": []
 }
