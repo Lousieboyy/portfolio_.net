@@ -113,6 +113,12 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        string targetUrl = "https://github.com";
+        string fetchedTitle = LinkPreview.getLinkPreview(targetUrl);
+
+        ViewBag.LinkPreviewTitle = fetchedTitle;
+        ViewBag.MyPreviewUrl = targetUrl;
+
         var myProjects = new List<Project>();
         var mySkills = new List<Skill>();
         var myTools = new List<Tool>();

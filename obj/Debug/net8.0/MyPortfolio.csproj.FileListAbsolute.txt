@@ -29,3 +29,6 @@ C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\obj\Debug\net8.0\MyPor
 C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\obj\Debug\net8.0\MyPortfolio.genruntimeconfig.cache
 C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\obj\Debug\net8.0\ref\MyPortfolio.dll
 C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\obj\Debug\net8.0\MyPortfolio.sourcelink.json
+C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\bin\Debug\net8.0\HtmlAgilityPack.dll
+C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\obj\Debug\net8.0\MyPortfolio.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\portfolio .net\MyPortfolio\obj\Debug\net8.0\MyPortfo.01A62FBD.Up2Date

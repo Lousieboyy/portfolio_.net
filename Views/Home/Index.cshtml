@@ -73,44 +73,79 @@
     <div class="container" id="project-section">
         <h2 class="text-center py-4">Projects</h2>
         <div class="row">
-            @foreach(Project item in Model.Projects){
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow" id="project-card">
-                        @if(!string.IsNullOrEmpty(item.ProjectUrl))
-                        {
-                            String embedUrl = item.ProjectUrl;
-                            if(item.ProjectUrl.Contains("youtube.com/shorts"))
-                            {
-                                embedUrl = item.ProjectUrl.Replace("youtube.com/shorts/", "embed/");
-                            }
-                            else if (item.ProjectUrl.Contains("youtu.be"))
-                            {
-                                embedUrl = item.ProjectUrl.Replace("youtu.be/", "www.youtube.com/embed/");
-                            }
-                            else if (item.ProjectUrl.Contains("youtube.com"))
-                            {
-                                embedUrl = item.ProjectUrl.Replace("watch?v=", "embed/");
-                            }
+           @foreach(Project item in Model.Projects)
+{
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm project-card d-flex flex-column" style="overflow: visible !important;">
+            
+            <div class="card-img-top-wrapper position-relative" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-bottom: 1px solid #eee;">
+                
+                @if (string.IsNullOrEmpty(item.ProjectUrl))
+                {
+                    <div class="text-center">
+                        <i class="bi bi-folder-x fs-1 text-muted"></i>
+                        <p class="text-muted mt-2 mb-0">Not Available</p>
+                    </div>
+                }
+                else if (item.ProjectUrl.Contains("youtube.com") || item.ProjectUrl.Contains("youtu.be"))
+                {
+                    string embedUrl = item.ProjectUrl;
+                    if(embedUrl.Contains("/shorts/")) { embedUrl = embedUrl.Replace("youtube.com/shorts/", "youtube.com/embed/"); }
+                    else if (embedUrl.Contains("youtu.be/")) { embedUrl = embedUrl.Replace("youtu.be/", "www.youtube.com/embed/"); }
+                    else if (embedUrl.Contains("watch?v=")) { embedUrl = embedUrl.Replace("watch?v=", "embed/"); }
+                    
+                    <iframe width="100%" height="200" src="@embedUrl" title="@item.Name" frameborder="0" allowfullscreen></iframe>
+                }
+                else 
+                {
+                    <div class="hover-preview-container p-4">
+                        <img src="../images/githubnobg.png" style="width: 60px; height: 60px;" class="img-fluid rounded shadow-sm">
+                        <div class="hover-card shadow-lg text-start p-0" style="overflow: hidden; width: 280px; z-index: 9999;">
                             
-                            <iframe width="100%" height="200" src="@embedUrl" title="@item.Name" frameborder="0" allowfullscreen></iframe>
-                        }
-                        @if(string.IsNullOrEmpty(item.ProjectUrl))
-                        {
-                            <div class="text-center">
-                                <p class="text-muted">Not Available</p>
-                            </div>
-                        }
-                        <div class="card-body">
-                            <h5 class="card-title text-center">@item.Name</h5>
-                            <p class="card-text text-center mb-5">@item.Description</p>
-                            @if(!string.IsNullOrEmpty(item.ProjectUrl))
-                            {
-                                <a href="@item.ProjectUrl" class="btn btn-nav stick bottom mb-4">View Project</a>
+                            @{
+                                string cleanUrl = item.ProjectUrl?.Trim() ?? "";
+                                if (!string.IsNullOrEmpty(cleanUrl) && !cleanUrl.StartsWith("http"))
+                                {
+                                    cleanUrl = "https://" + cleanUrl;
+                                }
+                                string thumIoLink = $"https://image.thum.io/get/width/300/crop/600/{cleanUrl}";
                             }
+
+                            <img src="@thumIoLink" 
+                                 alt="Website Preview" 
+                                 style="width: 100%; height: 200px; object-fit: cover;"
+                                 onerror="this.onerror=null; this.src='/images/placeholder.jpg';">
                         </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
+
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center fw-bold">@item.Name</h5>
+                <p class="card-text text-center flex-grow-1 mb-4">@item.Description</p>
+                
+                @if(!string.IsNullOrEmpty(item.ProjectUrl) && !item.ProjectUrl.Contains("youtube.com") && !item.ProjectUrl.Contains("youtu.be"))
+                {
+                    <a href="@item.ProjectUrl" target="_blank" class="btn btn-nav">
+                        View Repo
+                    </a>
+                }
+                else if (item.ProjectUrl.Contains("youtube.com") || item.ProjectUrl.Contains("youtu.be"))
+                {
+                    <a href="@item.ProjectUrl" target="_blank" class="btn btn-nav">
+                        Watch Video
+                    </a>
+                }
+                else if (string.IsNullOrEmpty(item.ProjectUrl))
+                {
+                    <button class="btn btn-nav" disabled>
+                        Unavailable
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+}
         </div>
     </div>
 </main>
