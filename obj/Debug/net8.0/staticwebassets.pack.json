@@ -97,6 +97,18 @@
       "PackagePath": "staticwebassets\\images\\github.png"
     },
     {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\githubIcon.png",
+      "PackagePath": "staticwebassets\\images\\githubIcon.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\githubIcon2.png",
+      "PackagePath": "staticwebassets\\images\\githubIcon2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\githubnobg.png",
+      "PackagePath": "staticwebassets\\images\\githubnobg.png"
+    },
+    {
       "Id": "C:\\Users\\User\\OneDrive\\Desktop\\portfolio .net\\MyPortfolio\\wwwroot\\images\\personal-img.png",
       "PackagePath": "staticwebassets\\images\\personal-img.png"
     },

@@ -230,3 +230,18 @@ main .container + .container {
     0% { opacity: 0; transform: translate(-50%, 10px); }
     100% { opacity: 1; transform: translate(-50%, 0); }
 }
+
+#btnScrollToTop{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: white;  
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
